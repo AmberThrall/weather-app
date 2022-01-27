@@ -8,7 +8,7 @@ class OpenWeatherMap {
             params["appid"] = this.apiKey;
 
         // Construct the url
-        let url = "http://api.openweathermap.org/data/2.5/" + page;
+        let url = "https://api.openweathermap.org/data/2.5/" + page;
         let first = true;
         for (let p in params) {
             if (params[p] !== undefined) {
