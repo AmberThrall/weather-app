@@ -1,0 +1,112 @@
+html {
+    background: url('./background.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+.bottomRight {
+    float: right;
+}
+
+.top {
+    width: calc(100% - 100px);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+}
+
+.topLeft {
+    display: inline-block;
+    float: left;
+    width: 33%;
+}
+
+.topLeft img {
+    position: relative;
+    top: -25px;
+    left: -25px;
+    margin: -25px;
+}
+
+.search {
+    display: inline-block;
+    width: 33%;
+    margin: auto 0;
+}
+
+.topRight {
+    text-align: right;
+    display: inline-block;
+    float: right;
+    width: 33%;
+}
+
+.topRight h2 {
+    margin-top: -10px;
+}
+
+.bottom {
+    width: calc(100% - 100px);
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+
+.bottom ul > li {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.buttonNotSelected,
+.buttonSelected {
+    color: white;
+    margin-left: 10px;
+    border: 0;
+    background-color: transparent;
+}
+
+.buttonSelected {
+    border-radius: 10%;
+    border: 3px solid white;
+}
+
+.buttonNotSelected:hover,
+.buttonSelected:hover {
+    cursor: pointer;
+}
+
+
+.searchBar {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    color: white;
+    padding: 12px 24px;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' stroke='white' fill='white'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+
+    border-radius: 50px;
+    border: 1px solid white;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.searchBar:hover,
+.searchBar:focus {
+    padding: 12px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    background-position: 100% center;
+}
