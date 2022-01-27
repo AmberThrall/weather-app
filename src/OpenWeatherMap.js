@@ -18,7 +18,7 @@ class OpenWeatherMap {
         }
 
         // Async. fetch the response.
-        const response = await fetch(url);
+        const response = await fetch(url, { mode: 'cors' });
 
         if (!response.ok)
             throw new Error(`An error occured: ${response.status}`);
